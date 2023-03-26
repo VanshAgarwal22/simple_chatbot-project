@@ -1,6 +1,6 @@
 //--------------------------------------chatbot project---------------------------------//
 
- from tkinter import *
+from tkinter import *
 root = Tk()
 def send():
     send = "You:"+ e.get()
