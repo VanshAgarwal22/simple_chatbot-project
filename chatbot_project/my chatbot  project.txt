@@ -1,0 +1,48 @@
+//--------------------------------------chatbot project---------------------------------//
+
+ from tkinter import *
+root = Tk()
+def send():
+    send = "You:"+ e.get()
+    text.insert(END,"\n" + send)
+    print(" let's start'\n")
+    if(e.get()=='hi'):
+        text.insert(END, "\n" + "Bot: hello")
+    elif(e.get()=='hello'):
+        text.insert(END, "\n" + "Bot: hi")
+    elif (e.get() == 'how are you?'):
+        text.insert(END, "\n" + "Bot: i'm fine and you?")
+    elif (e.get() == "i'm fine too"):
+        text.insert(END, "\n" + "Bot: nice to hear that")
+    
+         
+    elif (e.get() == "what's your name"):
+        text.insert(END, "\n" + "Bot: My name is chiity bot and  and  i'm created by vansh agarwal")
+        
+    elif (e.get() == "thanks"):
+        text.insert(END, "\n" + "Bot: welcoame")
+    elif (e.get() == "thankuu"):
+        text.insert(END, "\n" + "Bot: my pleasure! c u soon")
+    
+    elif (e.get() == "can you tell me some student id's"):
+        text.insert(END, "\n" + "Bot: yaa sure! \t vansh 20011491 \n sajal 2004733 \n gurav 20011493\n ")    
+    elif (e.get() == "20011491 studentinfo"):
+        text.insert(END, "\n" + "Bot: vansh agarwal \n sec f \n From the graphic era hill university")      
+    elif (e.get() == "2004733 studentinfo"):
+        text.insert(END, "\n" + "Bot: SAJAL MITTAL \n sec k \n From the graphic era hill university")       
+    elif (e.get() == "20011493 studentinfo"):
+        text.insert(END, "\n" + "Bot: gurav singh \n sec L \n From the graphic era hill university")          
+            
+    elif(e.get()=='student information'):
+        text.insert(END, "\n" + "Bot: vansh from sec F:: sajal from sec k:: gurav from sec L")   
+    else:
+        text.insert(END, "\n" + "Bot: Sorry I didnt get it.")
+text = Text(root,bg='black', fg='white')
+text.grid(row=0,column=0,columnspan=2)
+e = Entry(root,width=80)
+send = Button(root,text='Send',bg='deeppink', fg='white', width=20,command=send).grid(row=1,column=1)
+e.grid(row=1,column=0)
+root.title('vansh.COM')
+root.mainloop()
+
+<------------------------------------------------------------------------------------------------------------------------------------->
